@@ -1,2 +1,10 @@
 #!/bin/bash
-python3 -m compileall -b $PYFILE i
+python3 -m py_compile $PYFILE
+mv __pycache__/*.pyc ./$PYFILE'c'
+chmod +x $PYFILE'c'
+rmdir __pycache__
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privac
